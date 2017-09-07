@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.caren.physicsbasedpulltorefresh.MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/images" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stiffnessValueAdjustment"
+        android:layout_centerInParent="true"
+        android:text="stiffness value"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/stiffnessValueAdjustment"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:max="100" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bounceValueAdjustment"
+        android:layout_centerInParent="true"
+        android:text="DampingRatio value"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/bounceValueAdjustment"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:max="100" />
+
+</RelativeLayout>
